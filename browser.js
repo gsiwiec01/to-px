@@ -40,7 +40,7 @@ function toPX(str, element) {
     case 'em':
       return getPropertyInPX(element, 'font-size')
     case 'rem':
-      return getPropertyInPX(document.body, 'font-size')
+      return getPropertyInPX(document.documentElement, 'font-size')
     case 'vw':
       return window.innerWidth/100
     case 'vh':
